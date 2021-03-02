@@ -1,0 +1,22 @@
+{
+  "name": "second-street",
+  "version": "1.0.0",
+  "description": "Second Street Microsite",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/scss/main.scss assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanZ98/Second-Street.git"
+  },
+  "author": "Dan Zins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanZ98/Second-Street/issues"
+  },
+  "homepage": "https://github.com/DanZ98/Second-Street#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
