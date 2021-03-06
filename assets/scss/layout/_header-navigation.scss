@@ -1,0 +1,42 @@
+.nav-heading {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr 4.5rem;
+    justify-items: center;
+    margin: 2rem 1.7rem;
+
+    // hamburger menu
+    &__mobile-navlist {
+        display: none;
+    }
+
+    &__item:not(:nth-child(3)) {
+        display: inline-block;
+        width: 1.82rem;
+        height: 3.56rem;
+    }
+
+    &__bar {
+        display: inline-block;
+        width: 4rem;
+        height: .5rem;
+        background-color: $color-primary-black;
+    }
+
+    &__img {
+        width: 17.4rem;
+        height: auto;
+    }
+
+    &__item:nth-child(4) {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__socialicon{
+        font-size: 2rem;
+    }
+
+    &__socialicon:last-child {
+        margin-left: 2rem;
+    }
+}

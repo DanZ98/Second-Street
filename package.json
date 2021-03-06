@@ -1,10 +1,14 @@
 {
-  "name": "second-street",
+  "name": "Second-Street",
   "version": "1.0.0",
-  "description": "Second Street Microsite",
+  "description": "Second-Street microsite",
   "main": "index.js",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "compile:sass": "node-sass assets/scss/main.scss assets/css/styles.css"
+    "compile:sass": "node-sass assets/scss/main.scss assets/css/styles.css -w"
   },
   "repository": {
     "type": "git",
@@ -15,8 +19,5 @@
   "bugs": {
     "url": "https://github.com/DanZ98/Second-Street/issues"
   },
-  "homepage": "https://github.com/DanZ98/Second-Street#readme",
-  "devDependencies": {
-    "node-sass": "^5.0.0"
-  }
+  "homepage": "https://github.com/DanZ98/Second-Street#readme"
 }
