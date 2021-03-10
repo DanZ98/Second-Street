@@ -17,11 +17,18 @@
         <!-- header -->
         <header>
             <div class="nav-heading">
-                <div class="nav-heading__mobile-navlist">
+                <div id="ham-display" class="nav-heading__mobile-navlist--displaynone nav-heading__mobile-navlist--display">
                     <nav class="nav-heading__nav">
                         <ul class="nav-heading__list">
                             <li class="nav-heading__item"><a class="nav-heading__link" href="#" target="_blank">ABOUT</a></li>
-                            <li class="nav-heading__item"><a class="nav-heading__link" href="#" target="_blank">LOOKBOOK</a></li>
+                            <li class="nav-heading__item">
+                                <a class="nav-heading__link" href="#" target="_blank">LOOKBOOK</a><span class="nav-heading__arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                <ul class="subunordered">
+                                    <li class="subunordered__list">
+                                        <a class="subunordered__link" href="#" target="_blank"><img src="assets/images/lookbook-2017-nav" alt="Look Book 2017"></a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="nav-heading__item"><a class="nav-heading__link" href="#" target="_blank">SELLING GUIDE</a></li>
                             <li class="nav-heading__item"><a class="nav-heading__link" href="#" target="_blank">BLOG</a></li>
                             <li class="nav-heading__item"><a class="nav-heading__link" href="#" target="_blank">LOCATION</a></li>
@@ -29,15 +36,15 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="nav-heading__item">
+                <div id="ham-rotate" class="nav-heading__item-container">
                     <span class="nav-heading__bar">&nbsp;</span>
                     <span class="nav-heading__bar nav-heading__bar">&nbsp;</span>
                     <span class="nav-heading__bar">&nbsp;</span>
                 </div>
-                <div class="nav-heading__item">
+                <div class="nav-heading__item-container">
                     <img class="nav-heading__img" src="assets/images/second-street-logo.png" alt="2nd Street logo">
                 </div>
-                <div class="nav-heading__item">
+                <div class="nav-heading__item-container">
                     <i class="fa fa-facebook nav-heading__socialicon" aria-hidden="true"></i>
                     <i class="fa fa-instagram nav-heading__socialicon" aria-hidden=" true"></i>
                 </div>

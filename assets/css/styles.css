@@ -11,17 +11,66 @@ html {
 body {
   box-sizing: border-box; }
 
+/*
+#######################################################
+
+Header Section
+
+#######################################################
+*/
 .nav-heading {
   display: grid;
   grid-template-columns: 4.5rem 1fr 4.5rem;
   justify-items: center;
-  margin: 2rem 1.7rem; }
-  .nav-heading__mobile-navlist {
+  margin: 2rem 1.7rem;
+  position: relative;
+  /* rotate ham menu */
+  /* end rotate ham menu */ }
+  .nav-heading__mobile-navlist--displaynone {
     display: none; }
-  .nav-heading__item:not(:nth-child(3)) {
-    display: inline-block;
-    width: 1.82rem;
-    height: 3.56rem; }
+  .nav-heading__mobile-navlist--display {
+    position: absolute;
+    top: 6rem;
+    left: -2rem;
+    background-color: #ffffff; }
+  .nav-heading__nav {
+    width: 32rem; }
+  .nav-heading__list {
+    list-style: none; }
+  .nav-heading__item {
+    padding: 2rem 2rem 2rem 3rem;
+    border-bottom: 1px solid #333333;
+    font-weight: bold; }
+    .nav-heading__item .subunordered {
+      margin-top: 1rem;
+      list-style: none;
+      display: none; }
+  .nav-heading__item:nth-child(2) {
+    position: relative; }
+  .nav-heading__link {
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.4rem; }
+  .nav-heading__arrow {
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+    font-size: 3rem; }
+  .nav-heading .rotated-ham {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  .nav-heading__item-container:last-child {
+    display: flex; }
+  .nav-heading__item-container:nth-child(2) {
+    -webkit-transition: transform .4s;
+    -moz-transition: transform .4s;
+    -ms-transition: transform .4s;
+    transition: transform .4s; }
+  .nav-heading__item-container:nth-child(2):hover {
+    cursor: pointer; }
   .nav-heading__bar {
     display: inline-block;
     width: 4rem;
@@ -30,9 +79,9 @@ body {
   .nav-heading__img {
     width: 17.4rem;
     height: auto; }
-  .nav-heading__item:nth-child(4) {
-    display: flex;
-    justify-content: flex-end; }
+    @media only screen and (max-width: 56em) {
+      .nav-heading__img {
+        width: 15rem; } }
   .nav-heading__socialicon {
     font-size: 2rem; }
   .nav-heading__socialicon:last-child {

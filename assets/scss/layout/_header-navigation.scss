@@ -1,18 +1,91 @@
+/*
+#######################################################
+
+Header Section
+
+#######################################################
+*/
+
+// header navigation section
 .nav-heading {
     display: grid;
     grid-template-columns: 4.5rem 1fr 4.5rem;
     justify-items: center;
     margin: 2rem 1.7rem;
+    position: relative;
 
-    // hamburger menu
-    &__mobile-navlist {
+    // display none hamburger menu 
+    &__mobile-navlist--displaynone {
         display: none;
     }
 
-    &__item:not(:nth-child(3)) {
-        display: inline-block;
-        width: 1.82rem;
-        height: 3.56rem;
+    &__mobile-navlist--display {
+        position: absolute;
+        top: 6rem;
+        left: -2rem;
+        background-color: #ffffff;
+    }
+
+    &__nav {
+        width: 32rem;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        padding: 2rem 2rem 2rem 3rem;
+        border-bottom: 1px solid #333333;
+        font-weight: bold;
+
+        .subunordered {
+            margin-top: 1rem;
+            list-style: none;
+            display: none;
+        }
+    }
+
+    &__item:nth-child(2) {
+        position: relative;
+    }
+
+    &__link {
+        font-family: $default-font-family;
+        text-decoration: none;
+        color: #333333;
+        font-size: 1.4rem;
+    }
+
+    &__arrow {
+        position: absolute;
+        right: 3rem;
+        top: 1rem;
+        font-size: 3rem;
+    }
+
+    /* rotate ham menu */
+    .rotated-ham {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    /* end rotate ham menu */
+
+    &__item-container:last-child {
+        display: flex;
+    }
+
+    &__item-container:nth-child(2) {
+        -webkit-transition: transform .4s;
+        -moz-transition: transform .4s;
+        -ms-transition: transform .4s;
+        transition: transform .4s;
+    }
+
+    &__item-container:nth-child(2):hover {
+        cursor: pointer;
     }
 
     &__bar {
@@ -25,11 +98,10 @@
     &__img {
         width: 17.4rem;
         height: auto;
-    }
 
-    &__item:nth-child(4) {
-        display: flex;
-        justify-content: flex-end;
+        @include respond(small){
+            width: 15rem;
+        }
     }
 
     &__socialicon{
@@ -40,3 +112,5 @@
         margin-left: 2rem;
     }
 }
+
+// banner image section
