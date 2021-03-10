@@ -27,7 +27,8 @@ Header Section
   /* rotate ham menu */
   /* end rotate ham menu */ }
   .nav-heading__mobile-navlist--displaynone {
-    display: none; }
+    display: none;
+    transform: translateX(20rem); }
   .nav-heading__mobile-navlist--display {
     position: absolute;
     top: 6rem;
@@ -38,13 +39,24 @@ Header Section
   .nav-heading__list {
     list-style: none; }
   .nav-heading__item {
-    padding: 2rem 2rem 2rem 3rem;
+    padding: 3rem 2rem 3rem 3rem;
     border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
     font-weight: bold; }
     .nav-heading__item .subunordered {
       margin-top: 1rem;
-      list-style: none;
+      list-style: none; }
+    .nav-heading__item .subunordered--display {
       display: none; }
+    .nav-heading__item .subunordered__img:hover {
+      -webkit-transition-transform: scale(1.1);
+      -moz-transition-transform: scale(1.1);
+      -ms-transition-transform: scale(1.1);
+      transform: scale(1.1);
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      transition: all .5s; }
   .nav-heading__item:nth-child(2) {
     position: relative; }
   .nav-heading__link {
@@ -52,18 +64,30 @@ Header Section
     text-decoration: none;
     color: #333333;
     font-size: 1.4rem; }
+  .nav-heading__link:hover {
+    color: #D7312F;
+    transition: all .5s; }
+  .nav-heading .arrow-rotate {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
   .nav-heading__arrow {
     position: absolute;
     right: 3rem;
-    top: 1rem;
+    top: 2rem;
     font-size: 3rem; }
+  .nav-heading__arrow:hover {
+    cursor: pointer;
+    color: #D7312F; }
   .nav-heading .rotated-ham {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg); }
   .nav-heading__item-container:last-child {
-    display: flex; }
+    display: flex;
+    margin-right: 2rem; }
   .nav-heading__item-container:nth-child(2) {
     -webkit-transition: transform .4s;
     -moz-transition: transform .4s;
@@ -71,6 +95,9 @@ Header Section
     transition: transform .4s; }
   .nav-heading__item-container:nth-child(2):hover {
     cursor: pointer; }
+  .nav-heading__item-container:nth-child(4) a:hover {
+    cursor: pointer;
+    color: #D7312F; }
   .nav-heading__bar {
     display: inline-block;
     width: 4rem;
@@ -82,6 +109,9 @@ Header Section
     @media only screen and (max-width: 56em) {
       .nav-heading__img {
         width: 15rem; } }
+  .nav-heading__img:hover {
+    transform: translateY(-0.5rem);
+    transition: all .3s; }
   .nav-heading__socialicon {
     font-size: 2rem; }
   .nav-heading__socialicon:last-child {

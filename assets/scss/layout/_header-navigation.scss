@@ -17,6 +17,7 @@ Header Section
     // display none hamburger menu 
     &__mobile-navlist--displaynone {
         display: none;
+        transform: translateX(20rem);
     }
 
     &__mobile-navlist--display {
@@ -35,14 +36,29 @@ Header Section
     }
 
     &__item {
-        padding: 2rem 2rem 2rem 3rem;
-        border-bottom: 1px solid #333333;
+        padding: 3rem 2rem 3rem 3rem;
+        border-bottom: 1px solid $color-secondary-black;
+        border-right: 1px solid $color-secondary-black;
         font-weight: bold;
 
         .subunordered {
             margin-top: 1rem;
             list-style: none;
+        }
+
+        .subunordered--display{
             display: none;
+        }
+
+        .subunordered__img:hover {
+            -webkit-transition-transform: scale(1.1);
+            -moz-transition-transform: scale(1.1);
+            -ms-transition-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-transition:  all .5s;
+            -moz-transition:  all .5s;
+            -ms-transition:  all .5s;
+            transition:  all .5s;
         }
     }
 
@@ -53,15 +69,32 @@ Header Section
     &__link {
         font-family: $default-font-family;
         text-decoration: none;
-        color: #333333;
+        color: $color-secondary-black;
         font-size: 1.4rem;
+    }
+
+    &__link:hover {
+        color:$anchor-hover-color;
+        transition: all .5s;
+    }
+
+    .arrow-rotate {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 
     &__arrow {
         position: absolute;
         right: 3rem;
-        top: 1rem;
+        top: 2rem;
         font-size: 3rem;
+    }
+
+    &__arrow:hover {
+        cursor: pointer;
+        color:$anchor-hover-color;
     }
 
     /* rotate ham menu */
@@ -75,6 +108,7 @@ Header Section
 
     &__item-container:last-child {
         display: flex;
+        margin-right: 2rem;
     }
 
     &__item-container:nth-child(2) {
@@ -86,6 +120,11 @@ Header Section
 
     &__item-container:nth-child(2):hover {
         cursor: pointer;
+    }
+
+    &__item-container:nth-child(4) a:hover {
+        cursor: pointer;
+        color: $anchor-hover-color;
     }
 
     &__bar {
@@ -102,6 +141,11 @@ Header Section
         @include respond(small){
             width: 15rem;
         }
+    }
+
+    &__img:hover {
+        transform: translateY(-.5rem);
+        transition: all .3s;
     }
 
     &__socialicon{
