@@ -25,6 +25,7 @@ Header Section
         top: 6rem;
         left: -2rem;
         background-color: #ffffff;
+        z-index: 9;
     }
 
     &__nav {
@@ -158,3 +159,40 @@ Header Section
 }
 
 // banner image section
+.banner-image {
+    background: url(../../../assets/images/header.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #fd634e;
+    width: 100%;
+    height: 50rem;
+    background-attachment: scroll;
+    position: relative;
+    
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: $default-font-family;
+        font-weight: bold;
+        color: #ffffff;
+        max-width: 610px;
+        width: 100%;
+        padding: 0 2rem;
+
+        & h2 {
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+        }
+
+        & h1 {
+            font-size: 5rem;
+            letter-spacing: 5px;
+        }
+    }
+}
