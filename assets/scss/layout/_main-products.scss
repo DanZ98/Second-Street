@@ -1,0 +1,90 @@
+/*
+#######################################################
+
+Main Navigation Section
+
+#######################################################
+*/
+.nav-main {
+    &__nav {
+        margin: 8rem auto;
+        display: block;
+        width: 100%;
+        max-width: 20.5rem;
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    
+    &__item {
+        margin: 0 3rem;
+    }
+    
+    &__link {
+        font-size: $default-font-size-secondary;
+        font-family: $default-font-family;
+        text-decoration: none;
+        color: $color-grey-light;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__link:hover {
+        color:$anchor-hover-color;
+    }
+}
+
+/*
+#######################################################
+
+Main Product 1 Section
+
+#######################################################
+*/
+
+.men-product1 {
+    max-width: 98.8rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    &__container {
+        @include four-col;
+    }
+
+    &__container:last-child {
+        @include two-col;
+
+        @include respond(small){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item-second:last-child {
+        text-align: center;
+        align-self: center;
+        font-family: $default-font-family;
+        color: $color-primary-grey;
+        font-size: 1.2rem;
+    }
+
+    &__content {
+        max-width: 29rem;
+        width: 100%;
+        display: block;
+        margin: 0 auto 1.8rem auto;
+    }
+
+    &__content:last-child {
+        max-width: 37.8rem;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+

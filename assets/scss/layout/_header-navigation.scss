@@ -71,7 +71,7 @@ Header Section
         font-family: $default-font-family;
         text-decoration: none;
         color: $color-secondary-black;
-        font-size: 1.4rem;
+        font-size: $default-font-size-secondary;
     }
 
     &__link:hover {
@@ -79,6 +79,7 @@ Header Section
         transition: all .5s;
     }
 
+    /* rotate arrow */
     .arrow-rotate {
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
@@ -97,6 +98,7 @@ Header Section
         cursor: pointer;
         color:$anchor-hover-color;
     }
+    /* end rotate arrow */
 
     /* rotate ham menu */
     .rotated-ham {
@@ -151,6 +153,7 @@ Header Section
 
     &__socialicon{
         font-size: 2rem;
+        color: $color-primary-black;
     }
 
     &__socialicon:last-child {
@@ -167,7 +170,7 @@ Header Section
     background-size: cover;
     background-color: #fd634e;
     width: 100%;
-    height: 50rem;
+    height: 60rem;
     background-attachment: scroll;
     position: relative;
     
@@ -186,13 +189,15 @@ Header Section
         padding: 0 2rem;
 
         & h2 {
-            font-size: 1.4rem;
+            font-size: $default-font-size-secondary;
             letter-spacing: 1px;
+            text-transform: $text-uppercase;
         }
 
         & h1 {
             font-size: 5rem;
-            letter-spacing: 5px;
+            letter-spacing: .5rem;
+            text-transform: $text-uppercase;
         }
     }
 }
