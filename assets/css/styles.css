@@ -12,8 +12,7 @@ body {
   box-sizing: border-box; }
 
 img {
-  display: block;
-  width: 100%; }
+  display: block; }
 
 p {
   line-height: 1.5; }
@@ -116,9 +115,6 @@ Header Section
   .nav-heading__img {
     width: 17.4rem;
     height: auto; }
-    @media only screen and (max-width: 51.2em) {
-      .nav-heading__img {
-        width: 15rem; } }
   .nav-heading__img:hover {
     transform: translateY(-0.5rem);
     transition: all .3s; }
@@ -201,39 +197,103 @@ Main Product 1 Section
 
 #######################################################
 */
-.men-product1 {
-  max-width: 98.8rem;
+.product-col-4 {
+  max-width: 99.5rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem; }
-  .men-product1__container {
+  .product-col-4__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22.8rem, 1fr));
-    margin-bottom: .9rem;
+    grid-template-columns: repeat(auto-fit, minmax(22.8rem, 22.8rem));
+    margin-bottom: 1.4rem;
     justify-items: center;
-    grid-gap: 1rem; }
-  .men-product1__container:last-child {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(46.8rem, 1fr));
-    margin-bottom: 1rem;
-    justify-items: center;
-    grid-gap: 1rem; }
-    @media only screen and (max-width: 51.2em) {
-      .men-product1__container:last-child {
-        grid-template-columns: 1fr; } }
-  .men-product1__item-second:last-child {
+    grid-gap: 1.4rem;
+    justify-content: center; }
+
+.product-col-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(47rem, 47rem));
+  margin-bottom: 1.4rem;
+  grid-gap: 1.4rem;
+  justify-content: center;
+  justify-items: center; }
+  @media only screen and (max-width: 31.625rem) {
+    .product-col-2 {
+      grid-template-columns: 1fr; } }
+  .product-col-2__item-second:first-child img {
+    width: 100%; }
+  .product-col-2__item-second:last-child {
     text-align: center;
     align-self: center;
     font-family: "Lato", sans-serif;
     color: #666666;
     font-size: 1.2rem; }
-  .men-product1__content {
+    @media only screen and (max-width: 62.063rem) {
+      .product-col-2__item-second:last-child {
+        margin: 2rem 0 6rem 0; } }
+  .product-col-2__content {
     max-width: 29rem;
     width: 100%;
     display: block;
     margin: 0 auto 1.8rem auto; }
-  .men-product1__content:last-child {
+  .product-col-2__content:last-child {
     max-width: 37.8rem;
     width: 100%;
     display: block;
     margin: 0 auto; }
+
+/*
+#######################################################
+
+Main Product 2 Section
+
+#######################################################
+*/
+.product-col-3 {
+  max-width: 99.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem; }
+  .product-col-3__container:first-child {
+    display: grid;
+    grid-template-columns: 22.8rem 22.8rem 1fr;
+    grid-gap: 1.4rem;
+    margin-bottom: 1.4rem;
+    grid-template-areas: 'item-1 item-2 item-3';
+    justify-content: center;
+    justify-items: center; }
+    @media only screen and (max-width: 62.063rem) {
+      .product-col-3__container:first-child {
+        grid-template-columns: 22.8rem 22.8rem;
+        grid-template-areas: 'item-1 item-2' 'item-3 item-3'; } }
+    @media only screen and (max-width: 31.625rem) {
+      .product-col-3__container:first-child {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'item-1' 'item-2' 'item-3'; } }
+  .product-col-3__item:first-child {
+    grid-area: item-1; }
+  .product-col-3__item:last-child img {
+    width: 100%; }
+  .product-col-3__item {
+    grid-area: item-2; }
+  .product-col-3__item:last-child {
+    grid-area: item-3; }
+
+.product-col-2__item-second--2:first-child {
+  text-align: center;
+  align-self: center;
+  font-family: "Lato", sans-serif;
+  color: #666666;
+  font-size: 1.2rem; }
+  @media only screen and (max-width: 62.063rem) {
+    .product-col-2__item-second--2:first-child {
+      margin-top: 2rem; } }
+
+.product-col-2__content--2 {
+  max-width: 29rem;
+  width: 100%;
+  display: block;
+  margin: 0 auto 1.8rem auto; }
+
+.product-col-2__item-second--2 img {
+  width: 100%; }

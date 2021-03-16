@@ -6,6 +6,7 @@ Main Navigation Section
 #######################################################
 */
 .nav-main {
+    
     &__nav {
         margin: 8rem auto;
         display: block;
@@ -46,37 +47,37 @@ Main Product 1 Section
 #######################################################
 */
 
-.men-product1 {
-    max-width: 98.8rem;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 2rem;
+.product-col-4 {
+    
+    @include section-container;
 
     &__container {
         @include four-col;
     }
+}
 
-    &__container:last-child {
-        @include two-col;
+.product-col-2 {
+    
+    @include two-col;
 
-        @include respond(small){
-            grid-template-columns: 1fr;
+    @include respond(small){
+        @include grid-template-mobile;
+    }
+
+    &__item-second:first-child img {
+        @include img-width;
+    }   
+
+    &__item-second:last-child {
+        @include main-copy;
+
+        @include respond(large){ 
+            margin: 2rem 0 6rem 0;
         }
     }
 
-    &__item-second:last-child {
-        text-align: center;
-        align-self: center;
-        font-family: $default-font-family;
-        color: $color-primary-grey;
-        font-size: 1.2rem;
-    }
-
     &__content {
-        max-width: 29rem;
-        width: 100%;
-        display: block;
-        margin: 0 auto 1.8rem auto;
+        @include product-col-2;
     }
 
     &__content:last-child {
@@ -86,5 +87,78 @@ Main Product 1 Section
         margin: 0 auto;
     }
 }
+
+
+/*
+#######################################################
+
+Main Product 2 Section
+
+#######################################################
+*/
+
+.product-col-3 {
+    
+    @include section-container;
+
+    &__container:first-child {
+        display: grid;
+        grid-template-columns: 22.8rem 22.8rem 1fr;
+        grid-gap: 1.4rem;
+        margin-bottom: 1.4rem;
+        grid-template-areas: 'item-1 item-2 item-3';
+        justify-content: center;
+        justify-items: center;
+
+        @include respond(large){
+            grid-template-columns: 22.8rem 22.8rem;
+            grid-template-areas: 'item-1 item-2'
+                                 'item-3 item-3';
+        }
+
+        @include respond(small){
+            grid-template-columns: 1fr;
+            grid-template-areas: 'item-1'
+                                 'item-2'
+                                 'item-3';
+        }
+    }
+
+    &__item:first-child {
+        grid-area: item-1;
+    }
+    &__item:last-child img {
+        @include img-width;
+    }
+
+    &__item {
+        grid-area: item-2;
+    }
+
+    &__item:last-child {
+        grid-area: item-3;
+    }
+}
+
+.product-col-2 { 
+    
+    &__item-second--2:first-child {
+        @include main-copy;
+
+        @include respond(large){ 
+            margin-top: 2rem;
+        }
+    }
+
+    &__content--2 {
+        @include product-col-2;
+    }
+
+    &__item-second--2 img {
+        @include img-width;
+    }
+}
+
+
 
 

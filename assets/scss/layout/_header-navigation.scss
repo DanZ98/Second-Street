@@ -140,10 +140,6 @@ Header Section
     &__img {
         width: 17.4rem;
         height: auto;
-
-        @include respond(small){
-            width: 15rem;
-        }
     }
 
     &__img:hover {

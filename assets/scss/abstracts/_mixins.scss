@@ -1,25 +1,61 @@
+// section fixed width container
+@mixin section-container {
+    max-width: 99.5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 // four grid template layout
 @mixin four-col {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22.8rem, 1fr));
-    margin-bottom: .9rem;
+    grid-template-columns: repeat(auto-fit, minmax(22.8rem, 22.8rem));
+    margin-bottom: 1.4rem;
     justify-items: center;
-    grid-gap: 1rem;
+    grid-gap: 1.4rem;
+    justify-content: center;
 }
 
 // two grid template layout
 @mixin two-col {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(46.8rem, 1fr));
-    margin-bottom: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(47rem, 47rem));
+    margin-bottom: 1.4rem;
+    grid-gap: 1.4rem;
+    justify-content: center;
     justify-items: center;
-    grid-gap: 1rem;
+}
+
+// grid template mobile layout
+@mixin grid-template-mobile {
+    grid-template-columns: 1fr;
+}
+
+// width 100%
+@mixin img-width {
+    width: 100%;
+}
+
+// main product copy
+@mixin main-copy {
+    text-align: center;
+    align-self: center;
+    font-family: $default-font-family;
+    color: $color-primary-grey;
+    font-size: 1.2rem;
+}
+
+@mixin product-col-2 {
+    max-width: 29rem;
+    width: 100%;
+    display: block;
+    margin: 0 auto 1.8rem auto;
 }
 
 // responsive layout
 @mixin respond($breakpoint) {
     @if($breakpoint == large)  {
-        @media only screen and (max-width: 98.5rem) { 
+        @media only screen and (max-width: 62.063rem) { 
             @content; 
         }
     }
@@ -37,7 +73,7 @@
     // }
 
     @if($breakpoint == small)  {
-        @media only screen and (max-width: 51.2em) { 
+        @media only screen and (max-width: 31.625rem) { 
             @content; 
         }
     }
