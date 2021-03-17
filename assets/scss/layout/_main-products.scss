@@ -81,10 +81,7 @@ Main Product 1 Section
     }
 
     &__content:last-child {
-        max-width: 37.8rem;
-        width: 100%;
-        display: block;
-        margin: 0 auto;
+        @include product-col-2;
     }
 }
 
@@ -146,7 +143,7 @@ Main Product 2 Section
         @include main-copy;
 
         @include respond(large){ 
-            margin-top: 2rem;
+            margin: 2rem 0 6rem 0;
         }
     }
 

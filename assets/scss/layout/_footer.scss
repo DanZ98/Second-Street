@@ -1,0 +1,19 @@
+.footer {
+
+    &__container {
+
+        @include section-container;
+
+        display: grid;
+        grid-template-columns: 1fr .7fr 1fr 1fr;
+        grid-gap: 1.4rem;
+    }
+
+    &__content:first-child {
+        @include display;
+    }
+
+    &__content:nth-child(3) {
+        @include display;
+    }
+}

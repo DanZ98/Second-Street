@@ -156,6 +156,9 @@ Header Section
       font-size: 5rem;
       letter-spacing: .5rem;
       text-transform: uppercase; }
+      @media only screen and (max-width: 31.625rem) {
+        .banner-image__content h1 {
+          font-size: 4rem; } }
 
 /*
 #######################################################
@@ -232,10 +235,10 @@ Main Product 1 Section
       .product-col-2__item-second:last-child {
         margin: 2rem 0 6rem 0; } }
   .product-col-2__content {
-    max-width: 29rem;
+    max-width: 37.8rem;
     width: 100%;
     display: block;
-    margin: 0 auto 1.8rem auto; }
+    margin: 0 auto; }
   .product-col-2__content:last-child {
     max-width: 37.8rem;
     width: 100%;
@@ -287,13 +290,28 @@ Main Product 2 Section
   font-size: 1.2rem; }
   @media only screen and (max-width: 62.063rem) {
     .product-col-2__item-second--2:first-child {
-      margin-top: 2rem; } }
+      margin: 2rem 0 6rem 0; } }
 
 .product-col-2__content--2 {
-  max-width: 29rem;
+  max-width: 37.8rem;
   width: 100%;
   display: block;
-  margin: 0 auto 1.8rem auto; }
+  margin: 0 auto; }
 
 .product-col-2__item-second--2 img {
   width: 100%; }
+
+.footer__container {
+  max-width: 99.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr .7fr 1fr 1fr;
+  grid-gap: 1.4rem; }
+
+.footer__content:first-child {
+  display: inherit; }
+
+.footer__content:nth-child(3) {
+  display: inherit; }

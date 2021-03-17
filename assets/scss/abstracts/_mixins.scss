@@ -45,11 +45,16 @@
     font-size: 1.2rem;
 }
 
+// product two col container
 @mixin product-col-2 {
-    max-width: 29rem;
+    max-width: 37.8rem;
     width: 100%;
     display: block;
-    margin: 0 auto 1.8rem auto;
+    margin: 0 auto;
+}
+
+@mixin display {
+    display: inherit;
 }
 
 // responsive layout
@@ -59,18 +64,6 @@
             @content; 
         }
     }
-
-    @if($breakpoint == medium)  {
-        @media only screen and (max-width: 76rem) { 
-            @content; 
-        }
-    }
-
-    // @if($breakpoint == small)  {
-    //     @media only screen and (max-width: 56em) { 
-    //         @content; 
-    //     }
-    // }
 
     @if($breakpoint == small)  {
         @media only screen and (max-width: 31.625rem) { 

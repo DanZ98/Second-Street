@@ -194,6 +194,10 @@ Header Section
             font-size: 5rem;
             letter-spacing: .5rem;
             text-transform: $text-uppercase;
+
+            @include respond(small){
+                font-size: 4rem;
+            }
         }
     }
 }
