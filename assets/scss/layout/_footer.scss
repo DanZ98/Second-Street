@@ -1,19 +1,84 @@
 .footer {
+    margin-top: 13.5rem;
+    padding-top: 6rem;
+    border-top: 1px solid #e2e2e2;
 
     &__container {
 
         @include section-container;
 
         display: grid;
-        grid-template-columns: 1fr .7fr 1fr 1fr;
+        grid-template-columns: 1fr .7fr 1fr 1.2fr;
         grid-gap: 1.4rem;
+
+        @include respond(medium){
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
     }
 
-    &__content:first-child {
-        @include display;
+    &__link {
+        font-family: $default-font-family;
+        color: $color-grey-dark;
+        text-decoration: none;
+        font-size: 1.2rem;
     }
 
-    &__content:nth-child(3) {
-        @include display;
+    &__link:hover {
+        color: #D7312F;
     }
+
+    &__content {
+        @include respond(medium){
+            text-align: center;
+        }
+    }
+
+    &__content:last-child {
+        font-family: $default-font-family;
+        color: $color-grey-dark;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    &__content:last-child input {
+        margin-top: 1rem;
+        padding: .5rem;
+    }
+
+    &__content button {
+        margin-top: 1rem;
+        padding: .7rem 1.5rem;
+        border: none;
+        background-color: $color-grey-dark;
+        color: #fff;
+        -webkit-border-radius: .3rem;
+        -moz-border-radius: .3rem;
+        -ms-border-radius: .3rem;
+        border-radius: .3rem;
+    }
+
+    &__content button:hover {
+        background-color: #4e4f4f;
+        cursor: pointer;
+    }
+
+    &__copyright {
+        margin-top: 3rem;
+        padding: 2rem 0;
+        text-align: center;
+        font-family: $default-font-family;
+        color: $color-grey-dark;
+        text-decoration: none;
+        font-size: 1.2rem;
+        background-color: #f0f0f0;
+    }
+
+    // &__content:first-child {
+    //     @include display;
+    // }
+
+    // &__content:nth-child(3) {
+    //     @include display;
+    // }
 }

@@ -109,6 +109,8 @@ Header Section
     }
     /* end rotate ham menu */
 
+    
+
     &__item-container:last-child {
         display: flex;
         margin-right: 2rem;
@@ -154,6 +156,10 @@ Header Section
 
     &__socialicon:last-child {
         margin-left: 2rem;
+    }
+
+    &__socialicon:hover {
+        color: red;
     }
 }
 
