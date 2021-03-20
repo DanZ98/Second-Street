@@ -41,12 +41,12 @@
         font-size: 1.2rem;
     }
 
-    &__content:last-child input {
+    &__input {
         margin-top: 1rem;
         padding: .5rem;
     }
 
-    &__content button {
+    &__content input:last-child {
         margin-top: 1rem;
         padding: .7rem 1.5rem;
         border: none;
@@ -58,7 +58,7 @@
         border-radius: .3rem;
     }
 
-    &__content button:hover {
+    &__content input:last-child:hover {
         background-color: #4e4f4f;
         cursor: pointer;
     }

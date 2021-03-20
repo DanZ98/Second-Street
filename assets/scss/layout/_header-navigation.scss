@@ -22,7 +22,7 @@ Header Section
 
     &__mobile-navlist--display {
         position: absolute;
-        top: 6rem;
+        top: 5.1rem;
         left: -2rem;
         background-color: #ffffff;
         z-index: 9;
@@ -121,11 +121,14 @@ Header Section
         -moz-transition: transform .4s;
         -ms-transition: transform .4s;
         transition: transform .4s;
+        width: 4rem;
+        height: 3rem;
     }
 
     &__item-container:nth-child(2):hover {
         cursor: pointer;
     }
+
 
     &__item-container:nth-child(4) a:hover {
         cursor: pointer;
@@ -139,14 +142,17 @@ Header Section
         background-color: $color-primary-black;
     }
 
+    &__img:hover {
+        opacity: .7;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        transition: all .2s;
+    }
+
     &__img {
         width: 17.4rem;
         height: auto;
-    }
-
-    &__img:hover {
-        transform: translateY(-.5rem);
-        transition: all .3s;
     }
 
     &__socialicon{
@@ -165,7 +171,7 @@ Header Section
 
 // banner image section
 .banner-image {
-    background: url(../../../assets/images/header.jpg) no-repeat center center fixed;
+    background: url(../images/header.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

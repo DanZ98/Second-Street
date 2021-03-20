@@ -39,7 +39,7 @@ Header Section
     transform: translateX(20rem); }
   .nav-heading__mobile-navlist--display {
     position: absolute;
-    top: 6rem;
+    top: 5.1rem;
     left: -2rem;
     background-color: #ffffff;
     z-index: 9; }
@@ -101,7 +101,9 @@ Header Section
     -webkit-transition: transform .4s;
     -moz-transition: transform .4s;
     -ms-transition: transform .4s;
-    transition: transform .4s; }
+    transition: transform .4s;
+    width: 4rem;
+    height: 3rem; }
   .nav-heading__item-container:nth-child(2):hover {
     cursor: pointer; }
   .nav-heading__item-container:nth-child(4) a:hover {
@@ -112,12 +114,15 @@ Header Section
     width: 4rem;
     height: .5rem;
     background-color: #000000; }
+  .nav-heading__img:hover {
+    opacity: .7;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s; }
   .nav-heading__img {
     width: 17.4rem;
     height: auto; }
-  .nav-heading__img:hover {
-    transform: translateY(-0.5rem);
-    transition: all .3s; }
   .nav-heading__socialicon {
     font-size: 2rem;
     color: #000000; }
@@ -127,7 +132,7 @@ Header Section
     color: red; }
 
 .banner-image {
-  background: url(../../../assets/images/header.jpg) no-repeat center center fixed;
+  background: url(../images/header.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -334,10 +339,10 @@ Main Product 2 Section
     color: #2d2d2d;
     text-decoration: none;
     font-size: 1.2rem; }
-  .footer__content:last-child input {
+  .footer__input {
     margin-top: 1rem;
     padding: .5rem; }
-  .footer__content button {
+  .footer__content input:last-child {
     margin-top: 1rem;
     padding: .7rem 1.5rem;
     border: none;
@@ -347,7 +352,7 @@ Main Product 2 Section
     -moz-border-radius: .3rem;
     -ms-border-radius: .3rem;
     border-radius: .3rem; }
-  .footer__content button:hover {
+  .footer__content input:last-child:hover {
     background-color: #4e4f4f;
     cursor: pointer; }
   .footer__copyright {
