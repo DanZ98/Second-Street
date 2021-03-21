@@ -42,7 +42,7 @@ Main Navigation Section
 /*
 #######################################################
 
-Main Product 1 Section
+Main Product Column 4 Section
 
 #######################################################
 */
@@ -56,40 +56,10 @@ Main Product 1 Section
     }
 }
 
-.product-col-2 {
-    
-    @include two-col;
-
-    @include respond(small){
-        @include grid-template-mobile;
-    }
-
-    &__item-second:first-child img {
-        @include img-width;
-    }   
-
-    &__item-second:last-child {
-        @include main-copy;
-
-        @include respond(large){ 
-            margin: 2rem 0 6rem 0;
-        }
-    }
-
-    &__content {
-        @include product-col-2;
-    }
-
-    &__content:last-child {
-        @include product-col-2;
-    }
-}
-
-
 /*
 #######################################################
 
-Main Product 2 Section
+Main Product Column 3 Section
 
 #######################################################
 */
@@ -136,6 +106,105 @@ Main Product 2 Section
         grid-area: item-3;
     }
 }
+
+/*
+#######################################################
+
+Main Product Column 3 Version 2 Section
+
+#######################################################
+*/
+
+.product-col-3-version2 {
+    
+    @include section-container;
+
+    &__container:first-child {
+        display: grid;
+        grid-template-columns: 1fr 22.8rem 22.8rem;
+        grid-gap: 1.4rem;
+        margin-bottom: 1.4rem;
+        grid-template-areas: 'item-1 item-2 item-3';
+        justify-content: center;
+        justify-items: center;
+
+        @include respond(large){
+            grid-template-columns: 22.8rem 22.8rem;
+            grid-template-areas: 'item-1 item-1'
+                                 'item-2 item-3';
+        }
+
+        @include respond(small){
+            grid-template-columns: 1fr;
+            grid-template-areas: 'item-1'
+                                 'item-2'
+                                 'item-3';
+        }
+    }
+
+    &__item:first-child {
+        grid-area: item-1;
+    }
+    &__item:first-child img {
+        @include img-width;
+    }
+
+    &__item {
+        grid-area: item-2;
+    }
+
+    &__item:last-child {
+        grid-area: item-3;
+    }
+}
+
+/*
+#######################################################
+
+Main Product Column 2 Section
+
+#######################################################
+*/
+
+.product-col-2 {
+    
+    @include two-col;
+
+    @include respond(small){
+        @include grid-template-mobile;
+    }
+
+    &__item-second:first-child img {
+        @include img-width;
+    }   
+
+    &__item-second:last-child {
+        @include main-copy;
+
+        @include respond(large){ 
+            margin: 2rem 0 6rem 0;
+        }
+    }
+
+    &__content {
+        @include product-col-2;
+    }
+
+    &__content:last-child {
+        @include product-col-2;
+    }
+}
+
+
+
+
+/*
+#######################################################
+
+Main Product Column 2 Version 2 Section
+
+#######################################################
+*/
 
 .product-col-2 { 
     

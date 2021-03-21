@@ -203,7 +203,7 @@ Main Navigation Section
 /*
 #######################################################
 
-Main Product 1 Section
+Main Product Column 4 Section
 
 #######################################################
 */
@@ -220,6 +220,87 @@ Main Product 1 Section
     grid-gap: 1.4rem;
     justify-content: center; }
 
+/*
+#######################################################
+
+Main Product Column 3 Section
+
+#######################################################
+*/
+.product-col-3 {
+  max-width: 99.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem; }
+  .product-col-3__container:first-child {
+    display: grid;
+    grid-template-columns: 22.8rem 22.8rem 1fr;
+    grid-gap: 1.4rem;
+    margin-bottom: 1.4rem;
+    grid-template-areas: 'item-1 item-2 item-3';
+    justify-content: center;
+    justify-items: center; }
+    @media only screen and (max-width: 62.063rem) {
+      .product-col-3__container:first-child {
+        grid-template-columns: 22.8rem 22.8rem;
+        grid-template-areas: 'item-1 item-2' 'item-3 item-3'; } }
+    @media only screen and (max-width: 31.625rem) {
+      .product-col-3__container:first-child {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'item-1' 'item-2' 'item-3'; } }
+  .product-col-3__item:first-child {
+    grid-area: item-1; }
+  .product-col-3__item:last-child img {
+    width: 100%; }
+  .product-col-3__item {
+    grid-area: item-2; }
+  .product-col-3__item:last-child {
+    grid-area: item-3; }
+
+/*
+#######################################################
+
+Main Product Column 3 Version 2 Section
+
+#######################################################
+*/
+.product-col-3-version2 {
+  max-width: 99.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem; }
+  .product-col-3-version2__container:first-child {
+    display: grid;
+    grid-template-columns: 1fr 22.8rem 22.8rem;
+    grid-gap: 1.4rem;
+    margin-bottom: 1.4rem;
+    grid-template-areas: 'item-1 item-2 item-3';
+    justify-content: center;
+    justify-items: center; }
+    @media only screen and (max-width: 62.063rem) {
+      .product-col-3-version2__container:first-child {
+        grid-template-columns: 22.8rem 22.8rem;
+        grid-template-areas: 'item-1 item-1' 'item-2 item-3'; } }
+    @media only screen and (max-width: 31.625rem) {
+      .product-col-3-version2__container:first-child {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'item-1' 'item-2' 'item-3'; } }
+  .product-col-3-version2__item:first-child {
+    grid-area: item-1; }
+  .product-col-3-version2__item:first-child img {
+    width: 100%; }
+  .product-col-3-version2__item {
+    grid-area: item-2; }
+  .product-col-3-version2__item:last-child {
+    grid-area: item-3; }
+
+/*
+#######################################################
+
+Main Product Column 2 Section
+
+#######################################################
+*/
 .product-col-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(47rem, 47rem));
@@ -255,40 +336,10 @@ Main Product 1 Section
 /*
 #######################################################
 
-Main Product 2 Section
+Main Product Column 2 Version 2 Section
 
 #######################################################
 */
-.product-col-3 {
-  max-width: 99.5rem;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 2rem; }
-  .product-col-3__container:first-child {
-    display: grid;
-    grid-template-columns: 22.8rem 22.8rem 1fr;
-    grid-gap: 1.4rem;
-    margin-bottom: 1.4rem;
-    grid-template-areas: 'item-1 item-2 item-3';
-    justify-content: center;
-    justify-items: center; }
-    @media only screen and (max-width: 62.063rem) {
-      .product-col-3__container:first-child {
-        grid-template-columns: 22.8rem 22.8rem;
-        grid-template-areas: 'item-1 item-2' 'item-3 item-3'; } }
-    @media only screen and (max-width: 31.625rem) {
-      .product-col-3__container:first-child {
-        grid-template-columns: 1fr;
-        grid-template-areas: 'item-1' 'item-2' 'item-3'; } }
-  .product-col-3__item:first-child {
-    grid-area: item-1; }
-  .product-col-3__item:last-child img {
-    width: 100%; }
-  .product-col-3__item {
-    grid-area: item-2; }
-  .product-col-3__item:last-child {
-    grid-area: item-3; }
-
 .product-col-2__item-second--2:first-child {
   text-align: center;
   align-self: center;
