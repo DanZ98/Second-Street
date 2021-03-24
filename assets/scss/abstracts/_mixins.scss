@@ -60,19 +60,19 @@
 // responsive layout
 @mixin respond($breakpoint) {
     @if($breakpoint == large)  {
-        @media only screen and (max-width: 62.063rem) { 
+        @media only screen and (max-width: 62.063em) { 
             @content; 
         }
     }
 
     @if($breakpoint == medium)  {
-        @media only screen and (max-width: 47.5rem) { 
+        @media only screen and (max-width: 47.5em) { 
             @content; 
         }
     }
 
     @if($breakpoint == small)  {
-        @media only screen and (max-width: 31.625rem) { 
+        @media only screen and (max-width: 31.625em) { 
             @content; 
         }
     }

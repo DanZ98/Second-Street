@@ -18,8 +18,6 @@ arrow.addEventListener('click', function () {
     arrow.classList.toggle('arrow-rotate');
 });
 
-const iframeD = document.querySelector('iframe');
 
-iframeD.classList.add('testit');
 
 

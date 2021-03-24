@@ -163,7 +163,7 @@ Header Section
       font-size: 5rem;
       letter-spacing: .5rem;
       text-transform: uppercase; }
-      @media only screen and (max-width: 31.625rem) {
+      @media only screen and (max-width: 31.625em) {
         .banner-image__content h1 {
           font-size: 4rem; } }
 
@@ -240,11 +240,11 @@ Main Product Column 3 Section
     grid-template-areas: 'item-1 item-2 item-3';
     justify-content: center;
     justify-items: center; }
-    @media only screen and (max-width: 62.063rem) {
+    @media only screen and (max-width: 62.063em) {
       .product-col-3__container:first-child {
         grid-template-columns: 22.8rem 22.8rem;
         grid-template-areas: 'item-1 item-2' 'item-3 item-3'; } }
-    @media only screen and (max-width: 31.625rem) {
+    @media only screen and (max-width: 31.625em) {
       .product-col-3__container:first-child {
         grid-template-columns: 1fr;
         grid-template-areas: 'item-1' 'item-2' 'item-3'; } }
@@ -277,11 +277,11 @@ Main Product Column 3 Version 2 Section
     grid-template-areas: 'item-1 item-2 item-3';
     justify-content: center;
     justify-items: center; }
-    @media only screen and (max-width: 62.063rem) {
+    @media only screen and (max-width: 62.063em) {
       .product-col-3-version2__container:first-child {
         grid-template-columns: 22.8rem 22.8rem;
         grid-template-areas: 'item-1 item-1' 'item-2 item-3'; } }
-    @media only screen and (max-width: 31.625rem) {
+    @media only screen and (max-width: 31.625em) {
       .product-col-3-version2__container:first-child {
         grid-template-columns: 1fr;
         grid-template-areas: 'item-1' 'item-2' 'item-3'; } }
@@ -308,7 +308,7 @@ Main Product Column 2 Section
   grid-gap: 1.4rem;
   justify-content: center;
   justify-items: center; }
-  @media only screen and (max-width: 31.625rem) {
+  @media only screen and (max-width: 31.625em) {
     .product-col-2 {
       grid-template-columns: 1fr; } }
   .product-col-2__item-second:first-child img {
@@ -319,7 +319,7 @@ Main Product Column 2 Section
     font-family: "Lato", sans-serif;
     color: #666666;
     font-size: 1.2rem; }
-    @media only screen and (max-width: 62.063rem) {
+    @media only screen and (max-width: 62.063em) {
       .product-col-2__item-second:last-child {
         margin: 2rem 0 6rem 0; } }
   .product-col-2__content {
@@ -346,7 +346,7 @@ Main Product Column 2 Version 2 Section
   font-family: "Lato", sans-serif;
   color: #666666;
   font-size: 1.2rem; }
-  @media only screen and (max-width: 62.063rem) {
+  @media only screen and (max-width: 62.063em) {
     .product-col-2__item-second--2:first-child {
       margin: 2rem 0 6rem 0; } }
 
@@ -371,7 +371,7 @@ Main Product Column 2 Version 2 Section
     display: grid;
     grid-template-columns: 1fr .7fr 1fr 1.2fr;
     grid-gap: 1.4rem; }
-    @media only screen and (max-width: 47.5rem) {
+    @media only screen and (max-width: 47.5em) {
       .footer__container {
         grid-template-columns: 1fr;
         justify-items: center; } }
@@ -382,7 +382,7 @@ Main Product Column 2 Version 2 Section
     font-size: 1.2rem; }
   .footer__link:hover {
     color: #D7312F; }
-  @media only screen and (max-width: 47.5rem) {
+  @media only screen and (max-width: 47.5em) {
     .footer__content {
       text-align: center; } }
   .footer__content:last-child {
